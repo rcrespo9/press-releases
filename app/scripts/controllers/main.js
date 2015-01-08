@@ -11,6 +11,5 @@ angular.module('equisolveApp')
   .controller('MainCtrl', function ($scope, pressReleases) {
   	pressReleases.getList().then(function(results) {
   		$scope.pressReleases = results.news;
-  		console.log(results);
   	});
   });
