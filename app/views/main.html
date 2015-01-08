@@ -2,7 +2,7 @@
 
 	<article>
 		<h1>{{pressRelease.title}}</h1>
-		<small>Published: {{pressRelease.published}}</small>
+		<small>{{pressRelease.published | date: 'medium'}}</small>
 	</article>
 
 </section>

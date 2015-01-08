@@ -4,15 +4,18 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
-    <!-- endbuild -->
+    <!-- endbuild --> 
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <script src="//use.typekit.net/mlk2pyz.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>       
   </head>
   <body ng-app="equisolveApp">
     <!--[if lt IE 7]>
@@ -22,7 +25,7 @@
     <!-- Add your site or application content here -->
     <div class="container">
 
-      <div ng-view=""></div>
+      <main ng-view=""></main>
 
     </div>
 
@@ -69,6 +72,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
