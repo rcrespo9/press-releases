@@ -8,8 +8,9 @@
  * Controller of the equisolveApp
  */
 angular.module('equisolveApp')
-  .controller('MainCtrl', function ($scope, pressReleases) {
-  	pressReleases.getList().then(function(results) {
-  		$scope.pressReleases = results.news;
-  	});
+  .controller('MainCtrl', function ($scope, getNews) {
+  	$scope.pressReleases = getNews;
+  	// pressReleases.getList().then(function(results) {
+  	// 	$scope.pressReleases = results.news;
+  	// });
   });

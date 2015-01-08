@@ -18,13 +18,21 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'infinite-scroll'
+    'infinite-scroll',
+    'ks.ngScrollRepeat'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        resolve: {
+          getNews: function(pressReleases) {
+            return pressReleases.getList().then(function(results) {
+              return results.news;
+            });
+          }
+        }
       })
       .otherwise({
         redirectTo: '/'

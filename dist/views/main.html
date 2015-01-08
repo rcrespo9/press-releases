@@ -1,1 +1,1 @@
-<section ng-repeat="pressRelease in pressReleases"> <article> <h1>{{pressRelease.title}}</h1> <small>{{pressRelease.published | date: 'medium'}}</small> </article> </section>
+<section ng-scroll-repeat="pressRelease in pressReleases" page-size="15" tolerance="200"> <article> <h1>{{pressRelease.title}}</h1> <small>{{pressRelease.published}}</small> </article> </section>
